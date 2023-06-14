@@ -1,0 +1,16 @@
+    <app-skeleton *ngIf="loader" type="cabin-card"></app-skeleton>
+
+    <div class="cabin-card" *ngIf="!loader">
+      <span class="cabin-number">{{cabin.cabinNumber}}</span>
+      <div class="time">
+        <span>{{timer}}</span>
+      </div>
+      <div class="buttons">
+        <button (click)="start()" pTooltip="start" tooltipPosition="bottom" tooltipEvent="hover" [disabled]="isStart"
+          pButton pRipple type="button" icon="pi pi-play" class="p-button-rounded button-success"></button>
+        <button (click)="pause()" pTooltip="pause" tooltipPosition="bottom" tooltipEvent="hover" [disabled]="!isStart"
+          pButton pRipple type="button" icon="pi pi-pause" class="p-button-rounded button-warning"></button>
+        <button (click)="stop()" pTooltip="stop" tooltipPosition="bottom" tooltipEvent="hover" [disabled]="!isStart"
+          pButton pRipple type="button" icon="pi pi-stop-circle" class="p-button-rounded button-danger"></button>
+      </div>
+    </div>

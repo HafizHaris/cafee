@@ -1,0 +1,24 @@
+.sidenav{
+    width: 5.313rem;
+    background: var(--bg-secondary);
+    height: 100vh;
+    border-right: var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem 0;
+}
+
+.sidenav i {
+    color: grey;
+    font-size: 1.6rem;
+    display: block;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.sidenav i:hover {
+    color:white;
+    border-radius: 50%;
+}

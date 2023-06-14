@@ -1,0 +1,17 @@
+<div class="grid">
+    <div class="row">
+        <div class="col-md-8 mb-3">
+            <app-skeleton *ngIf="loader" type="titles"></app-skeleton>
+            <h2 class="color-white" *ngIf="!loader">Orange Net Cafe</h2>
+            <h6 class="color-white" *ngIf="!loader">Welcome Haris Khan!</h6>
+        </div>
+        <div class="col-md-4">
+            <span class="current-date">Sat 3, June 2023</span>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let cabin of cabins" class="col-md-3 mb-4">
+            <app-cabin-card  [cabin]="cabin"></app-cabin-card>
+        </div>
+    </div>
+</div>

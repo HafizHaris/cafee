@@ -1,0 +1,11 @@
+.top-nav {
+    background-color: transparent; 
+    height:60px; 
+    position: relative;
+}
+.top-nav span {
+    position: absolute; 
+    right: 1rem; 
+    top:1rem; 
+    color:white;
+}

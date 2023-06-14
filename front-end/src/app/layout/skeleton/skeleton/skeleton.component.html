@@ -1,0 +1,18 @@
+<div class="cabin-card p-3" *ngIf="type=='cabin-card'">
+    <ngx-skeleton-loader [theme]="{background: '#949494', height: '95px', top:'10px', width: '90px'}" count="1"
+      appearance="line"></ngx-skeleton-loader>
+    <div class="d-flex justify-content-between">
+      <ngx-skeleton-loader [theme]="{background: '#949494', width: '90px', top:'25px' }" count="1" appearance="line">
+      </ngx-skeleton-loader>
+      <ngx-skeleton-loader [theme]="{background: '#949494', height:'35px', width:'35px', top:'10px'}" count="3" appearance="circle">
+      </ngx-skeleton-loader>
+    </div>
+</div>
+
+
+<span *ngIf="type=='titles'">
+    <ngx-skeleton-loader [theme]="{background: '#949494', width: '220px', display: 'block', height:'35px', top:'10px' }" count="1" appearance="line">
+    </ngx-skeleton-loader>
+    <ngx-skeleton-loader [theme]="{background: '#949494', width: '150px', top: '10px', bottom:'30px' }" count="1" appearance="line">
+    </ngx-skeleton-loader>
+</span>
